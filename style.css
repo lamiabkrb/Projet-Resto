@@ -1,0 +1,145 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+    scroll-behavior: smooth;  /* voir leffet de difilement  */
+
+}
+
+p{
+    font-weight: 300;
+    color: #1111;
+}
+
+header{
+    position: fixed;  /*il ne bouge pas même en défilant */
+    top: 10px;
+    left: 10px;
+    padding: 0px; /* Le padding en CSS définit l'espace intérieur entre le contenu d'un élément (comme du texte dans un bouton) et ses bords */
+    width: 100%;
+    z-index: 1;
+    display: flex;     /* les elements soient allignés */
+    justify-content: space-between; /*  espace entres les elemtn */
+    align-items: center;   /*  aligner les elemtn au centre de la session  */
+    transition: 0.5s;
+    
+}
+
+.logo{
+    color: #ffff; 
+    font-weight: bold;  /*  gras */
+    font-size: 2em;
+    text-decoration: none; /*  pour enlever ce qui appliquer deja au texte comme soulignement*/ 
+
+}
+
+.logo span{
+    color: #fb911f;
+}
+
+.navbar{
+    display: flex; /*  pour que les elements soient a la meme ligne */
+    position: relative;
+  
+}
+
+.navbar li{
+    list-style: none;
+}
+
+.navbar a{
+    color: #fff; 
+    text-decoration: none;
+    margin-left: 30px;
+    font-weight: 700;
+
+}
+
+.btn_reservation{
+    padding: 10px 20px; /* l'espace intérieur du bouton (entre le texte et les bords du bouton)  */
+    background: #fb911f;
+    margin-top: -10px;
+    text-transform: uppercase; /* mettre le texte en majuscule */
+}
+
+.btn_reservation:hover{   /*:hover est un pseudo-sélecteur qui applique un style uniquement lorsque la souris est placée sur l'élément*/
+    background: #d87710;
+    transition: ease-out;
+}
+ header .navbar li a:hover{
+    color: #fb911f;
+    border-bottom: 2px solid #fb911f;
+ }
+
+ .banniere {
+    position: relative;
+    width: 100%; /* La largeur de l'élément est fixée à 100% de son conteneur parent. Il prendra donc toute la largeur disponible. */
+    min-height: 100vh; /*100% de la hauteur de la fenêtre du navigateur */
+    display: flex;
+    justify-content: center;
+    align-items: center;  /* Centre verticalement les éléments enfants */
+    background-image: url(./images/pageheader-banner.jpg);
+    background-size: cover; /*  pour que limage couver tout la section ou bien la partie concernée */
+    background-position: center; /* Assure un bon centrage de l'image */
+    text-align: center; /* Centre le texte */
+}
+
+.banniere .contenu {
+    max-width: 70%;
+    display: flex;   /*Cela permet d'aligner les éléments horizontalement */
+    flex-direction: column; /* Empiler les éléments verticalement */
+    justify-content: center; /*entre le contenu à la fois verticalement */
+    align-items: center; /*entre le contenu horizontalement.*/
+    text-align: center; /* Centre le texte */
+}
+
+.banniere .contenu h2 {
+    color: #fff;
+    font-size: 3em;
+    text-transform: capitalize;
+}
+
+.contenu p:nth-child(2){
+    color: #fff ;
+    font-size: 1.2em; 
+}
+.btn_contenu{
+    display: flex; /* Aligne les boutons sur la même ligne */
+    gap: 5px; /* Ajoute un espace entre eux */
+    justify-content: center; /* Centre les boutons horizontalement */
+  
+}
+
+.btn1{
+    font-size: 1em; /* 16px car 1em = 100% de 16px qui est la taille de police de base  */
+    color: #fff;
+    background: #fb911f;
+    padding: 10px 20px; /* Ajoute un espace intérieur de 10px en haut/bas et 20px à gauche/droite */
+    display: inline-block;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    margin-left: 10px;
+}
+
+.btn2{
+    font-size: 1em; /* 16px car 1em = 100% de 16px qui est la taille de police de base  */
+    color: #fff;
+    background: #2A4963;
+    padding: 10px 20px; /* Ajoute un espace intérieur de 10px en haut/bas et 20px à gauche/droite */
+    display: inline-block;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    margin-left: 10px;
+}
+
+.btn1:hover{
+    letter-spacing: 4px; /* lorsque on survole le bouton sagrandie en largeur*/
+}
+
