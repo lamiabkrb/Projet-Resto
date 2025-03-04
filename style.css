@@ -20,7 +20,7 @@ header{
     width: 100%;
     z-index: 1;
     display: flex;     /* les elements soient allignés */
-    justify-content: space-between; /*  espace entres les elemtn */
+    justify-content: space-evenly; /*  espace PARTOUT pour laisser les espaces entres la fenetre et le navbar */
     align-items: center;   /*  aligner les elemtn au centre de la session  */
     transition: 0.5s;
     
@@ -143,3 +143,20 @@ header{
     letter-spacing: 4px; /* lorsque on survole le bouton sagrandie en largeur*/
 }
 
+section{
+    padding: 100px ;
+}
+
+.row{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content:space-between ;
+}
+
+.row .col50{
+    position: relative;
+    width: 48%;
+    justify-content: center;
+    align-items: center;
+}
