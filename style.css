@@ -9,7 +9,7 @@
 
 p{
     font-weight: 300;
-    color: #1111;
+    color: #111;
 }
 
 header{
@@ -158,5 +158,27 @@ section{
     position: relative;
     width: 48%;
     justify-content: center;
-    align-items: center;
+    align-items: center; 
+}
+.row .col50 h2{
+    margin: bottom 20px; ;
+}
+.titre-texte{
+    color: #000;
+    font-size: 2em; /* Définit la taille de la police à 2 fois la taille de base (généralement 16px * 2 = 32px) */
+    font-weight: 300px; /*définir l'épaisseur  100 --> extra fin ; 500--> moyen; 900N--> trop gras */
+    text-transform: capitalize ;
+}
+
+.titre-texte span{
+    color: #fb911f;
+    font: size 1.5em; 
+    font-weight: 700px;
+}
+
+.row .col50 img{
+    height: 450px;
+    width: 600px;
+    position: relative;
+
 }
