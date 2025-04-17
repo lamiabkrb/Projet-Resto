@@ -188,7 +188,7 @@ section{
     width: 100%;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    flex-direction: column; /*alignement vertical des photos  */
 }
 
 .menu{
@@ -198,5 +198,39 @@ section{
 .menu .contenu{
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /*Les éléments passent à la ligne suivante si l'espace est insuffisant*/
+    margin-top: 40px;
+
+}
+
+.menu .contenu .box{
+    width: 350px; /* Largeur fixe de 350px */
+    margin: 20px;  /* Espacement*/
+    border: 20px solid #fff ;/* Bordure blanche de 20px */
+    box-shadow: 20px 15px 35px rgba(0, 0, 0, 0.8) ; /* Ombre portée Couleur noire avec 80% d’opacité. */
+}
+
+.menu .contenu .box .imbox{
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+
+.menu .contenu .box .imbox img{
+    position: relative;/*Positionne l’image de manière relative par rapport à .imbox */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;  /*Permet à l’image de remplir l’espace de .imbox sans déformation*/
+}
+
+.menu .contenu .box .text{
+    text-align: center;
+    font-weight: 300px;
+    color: #111;
+}
+
+.menu .contenu .box .text h3{
+    font-weight: 400;
 }
